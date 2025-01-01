@@ -48,9 +48,11 @@ URL:
 http://localhost/poliklinik/src/auth/admin/login.php
 ```
 Nama/username: superadmin
+
 Password: 123
 
 ## Cara Login sebagai Pasien
 Nama/username: NIK 
+
 Password: alamat pasien yang di daftarkan
 
