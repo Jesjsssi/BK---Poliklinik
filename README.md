@@ -1,5 +1,8 @@
 # Web Poliklinik dengan PHP Native
 
+<img
+src="https://github.com/Jesjsssi/BK---Poliklinik/blob/main/Screenshot%202025-01-01%20190224.png"
+alt="landing page">
 
 ## Prasyarat
 
