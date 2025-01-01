@@ -40,6 +40,7 @@ http://localhost/poliklinik/
 
 ## Cara Login sebagai Dokter
 No Hp : 085711112222
+
 Password: 123
 
 ## Cara Login sebagai Admin
@@ -53,5 +54,6 @@ Password: 123
 
 ## Cara Login sebagai Pasien
 Nama/username: NIK 
+
 Password: alamat pasien yang di daftarkan
 
