@@ -58,12 +58,12 @@ CREATE TABLE `daftar_poli` (
 -- Dumping data untuk tabel `daftar_poli`
 --
 
-INSERT INTO `daftar_poli` (`id`, `id_pasien`, `id_jadwal`, `keluhan`, `no_antrian`) VALUES
-(15, 5, 1, 'Pusing, Mual dan Demam', 1),
-(16, 2, 1, 'Sakit Perut', 2),
-(17, 1, 1, 'Batuk, Pilek', 3),
-(18, 5, 5, 'Diare', 1),
-(19, 5, 1, 'Mual', 4);
+-- INSERT INTO `daftar_poli` (`id`, `id_pasien`, `id_jadwal`, `keluhan`, `no_antrian`) VALUES
+-- (1, 5, 1, 'Pusing, Mual dan Demam', 1),
+-- (2, 2, 1, 'Sakit Perut', 2),
+-- (3, 1, 1, 'Batuk, Pilek', 3),
+-- (4, 5, 5, 'Diare', 1),
+-- (5, 5, 1, 'Mual', 4);
 
 -- --------------------------------------------------------
 
@@ -81,9 +81,9 @@ CREATE TABLE `detail_periksa` (
 -- Dumping data untuk tabel `detail_periksa`
 --
 
-INSERT INTO `detail_periksa` (`id`, `id_periksa`, `id_obat`) VALUES
-(1, 5, 5),
-(2, 8, 5);
+-- INSERT INTO `detail_periksa` (`id`, `id_periksa`, `id_obat`) VALUES
+-- (1, 5, 5),
+-- (2, 8, 5);
 
 -- --------------------------------------------------------
 
@@ -105,11 +105,10 @@ CREATE TABLE `dokter` (
 --
 
 INSERT INTO `dokter` (`id`, `nama_dokter`, `alamat_dokter`, `no_hp`, `password`, `id_poli`) VALUES
-(10, 'dr Jeje', 'Semarang', '085711112222', '123', 2),
-(11, 'dr Lila', 'Kudus', '085722223333', '123', 1),
-(12, 'dr Johana', 'Jogja', '085733334444', '123', 1),
-(13, 'dr Grace', 'Pati', '085744445555', '123', 2);
-
+(1, 'dr Jeje', 'Semarang', '085711112222', '123', 2),
+(2, 'dr Lila', 'Kudus', '085722223333', '123', 1),
+(3, 'dr Johana', 'Jogja', '085733334444', '123', 1),
+(4, 'dr Grace', 'Pati', '085744445555', '123', 2);
 -- --------------------------------------------------------
 
 --
@@ -130,17 +129,17 @@ CREATE TABLE `jadwal_periksa` (
 --
 
 INSERT INTO `jadwal_periksa` (`id`, `id_dokter`, `hari`, `jam_mulai`, `jam_selesai`, `status_jadwal`) VALUES
-(1, 10, 'Selasa', '08:00:00', '10:00:00', '1'),
-(2, 10, 'Selasa', '18:00:00', '22:00:00', '0'),
-(4, 11, 'Senin', '16:00:00', '20:00:00', ''),
-(5, 11, 'Selasa', '07:00:00', '09:00:00', ''),
-(6, 11, 'Rabu', '12:00:00', '15:00:00', ''),
-(7, 12, 'Senin', '12:00:00', '15:00:00', ''),
-(8, 12, 'Senin', '16:00:00', '18:00:00', ''),
-(9, 12, 'Rabu', '07:00:00', '09:00:00', ''),
-(10, 13, 'Selasa', '12:00:00', '15:00:00', ''),
-(11, 13, 'Rabu', '16:00:00', '20:00:00', ''),
-(12, 13, 'Kamis', '07:00:00', '09:00:00', '');
+(1, 1, 'Selasa', '08:00:00', '10:00:00', '1'),
+(2, 1, 'Selasa', '18:00:00', '22:00:00', '0'),
+(3, 2, 'Senin', '16:00:00', '20:00:00', ''),
+(4, 2, 'Selasa', '07:00:00', '09:00:00', ''),
+(5, 2, 'Rabu', '12:00:00', '15:00:00', ''),
+(6, 3, 'Senin', '12:00:00', '15:00:00', ''),
+(7, 3, 'Senin', '16:00:00', '18:00:00', ''),
+(8, 3, 'Rabu', '07:00:00', '09:00:00', ''),
+(9, 4, 'Selasa', '12:00:00', '15:00:00', ''),
+(10, 4, 'Rabu', '16:00:00', '20:00:00', ''),
+(11, 4, 'Kamis', '07:00:00', '09:00:00', '');
 
 -- --------------------------------------------------------
 
@@ -160,9 +159,9 @@ CREATE TABLE `obat` (
 --
 
 INSERT INTO `obat` (`id`, `nama_obat`, `kemasan`, `harga`) VALUES
-(3, 'Ibuprofen', '200mg', 35000),
-(4, 'Vitamin C', '100ml', 20000),
-(5, 'Paracetamol', '150gr', 30000);
+(1, 'Ibuprofen', '200mg', 35000),
+(2, 'Vitamin C', '100ml', 20000),
+(3, 'Paracetamol', '150gr', 30000);
 
 -- --------------------------------------------------------
 
@@ -185,13 +184,13 @@ CREATE TABLE `pasien` (
 --
 
 INSERT INTO `pasien` (`id`, `nama_pasien`, `alamat_pasien`, `no_ktp`, `no_hp`, `no_rm`, `password`) VALUES
-(1, 'Jessie', 'Semarang', '33333333333', '081234567890', 'RM-1', '123'),
-(2, 'Lila', 'Kudus', '444444444444', '081234567891', 'RM-2', '123'),
-(5, 'Carlos', 'Jepata', '555555555', '081234567891', '202401-001', '123'),
-(6, 'Gracia', 'Pati', '666666666666', '081234567893', '202401-002', '123'),
-(7, 'Aditama', 'Bondo', '7777777777', '081234567894', '202401-003', '123'),
-(8, 'Choco', 'Sadewa', '8888888888', '081234567895', '202401-004', '123'),
-(10, 'Kayllalee', 'Semarang', '99999999', '081234567896', '202401-005', '123');
+(1, 'Jessie', 'Semarang', '33333333333', '081234567890', '202401-001', '123'),
+(2, 'Lila', 'Kudus', '444444444444', '081234567891', '202401-002', '123'),
+(3, 'Carlos', 'Jepata', '555555555', '081234567891', '202401-003', '123'),
+(4, 'Gracia', 'Pati', '666666666666', '081234567893', '202401-004', '123'),
+(5, 'Aditama', 'Bondo', '7777777777', '081234567894', '202401-005', '123'),
+(6, 'Choco', 'Sadewa', '8888888888', '081234567895', '202401-006', '123'),
+(7, 'Kayllalee', 'Semarang', '99999999', '081234567896', '202401-007', '123');
 
 -- --------------------------------------------------------
 
@@ -211,12 +210,12 @@ CREATE TABLE `periksa` (
 -- Dumping data untuk tabel `periksa`
 --
 
-INSERT INTO `periksa` (`id`, `id_daftar_poli`, `tgl_periksa`, `catatan`, `biaya_periksa`) VALUES
-(5, 15, '2024-01-08 21:06:00', 'Istirahat', 180000),
-(6, 16, NULL, '', 0),
-(7, 17, NULL, '', 0),
-(8, 18, '2024-01-08 21:31:00', 'Jangan makan', 180000),
-(9, 19, NULL, '', 0);
+-- INSERT INTO `periksa` (`id`, `id_daftar_poli`, `tgl_periksa`, `catatan`, `biaya_periksa`) VALUES
+-- (5, 15, '2024-01-08 21:06:00', 'Istirahat', 180000),
+-- (6, 16, NULL, '', 0),
+-- (7, 17, NULL, '', 0),
+-- (8, 18, '2024-01-08 21:31:00', 'Jangan makan', 180000),
+-- (9, 19, NULL, '', 0);
 
 -- --------------------------------------------------------
 
