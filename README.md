@@ -49,7 +49,7 @@ Password: 123
 ## Cara Login sebagai Admin
 URL:  
 ```bash
-http://localhost/poliklinik/src/auth/admin/login.php
+http://localhost/BK---Poliklinik/src/auth/admin/login.php
 ```
 Nama/username: superadmin
 
