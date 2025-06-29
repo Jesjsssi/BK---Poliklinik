@@ -56,7 +56,7 @@ Nama/username: superadmin
 Password: 123
 
 ## Cara Login sebagai Pasien
-Nama/username: NIK 
+Nama/username: 33333333333
 
-Password: alamat pasien yang di daftarkan
+Password: 123
 
